@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>bienvenido <span id="nombre"></span></h1>
+        <button onclick="salir()" id="button">salir</button>
+    </div>
+    <script>
+        let nombre=sessionStorage.getItem('nombre');
+        if(!nombre){
+            location.href="./index.html";
+        }
+        document.getElementById('nombre').innerText=nombre;
+
+        function salir() {
+                sessionStorage.removeItem('nombre'); // Elimina el nombre del sessionStorage
+                window.location.href = "login.html"; // Redirige a la página de inicio de sesión
+        }
+    </script>
+</body>
+</html>
