@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box;
+    list-style: none;
+}
+body{
+    background: gray;
+}
+.encabezado{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+ 
+}
+#boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100px;
+}
