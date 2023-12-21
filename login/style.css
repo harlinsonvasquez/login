@@ -18,3 +18,13 @@ body{
   margin-top: 300px;
   border-radius:20px ;
 }
+.mb-3{
+ 
+  margin-top: 30px;
+}
+.login{
+
+  display: flex;
+  justify-content: center;
+ 
+}
