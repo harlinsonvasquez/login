@@ -1,3 +1,37 @@
 *{
     margin: 0;
+    padding: 0;
+     box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+}
+.carousel{
+ width: 700px;
+ height: 400px;
+ margin-left: 300px;
+
+}
+.carousel-inner{
+   
+    border: solid black;
+}
+.carousel-item{
+    background: blue;
+   display: flex;
+   width: 200px;
+   height: 400px;
+   align-content: center;
+   overflow: hidden;
+   
+   
+}
+.carousel-item img{
+    width: 100% ;
+    height: 100%;
+    object-fit: cover;
+}
+.encabezado{
+    
+    
+    border: solid black;
 }
