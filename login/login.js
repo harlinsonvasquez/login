@@ -11,7 +11,7 @@ function iniciarSesion(event) {
       email: "harry@gmail.com",
       password: "123",
       imagenes:[
-        './images/img-1.jpg',
+                './images/img-1.jpg',
                 './images/img-2.jpeg',
                 './images/img-3.jpg',
                 './images/img-4.jpg',
@@ -20,7 +20,10 @@ function iniciarSesion(event) {
                 './images/img-7.jpg',
                 './images/img-8.jpg',
                 './images/img-9.webp',
-                './images/img-10.jpeg',
+                './images/img-10.jpeg'
+                
+                
+                
 
       ]
     },
@@ -66,6 +69,7 @@ function iniciarSesion(event) {
 
   if (usuarioEncontrado) {
     sessionStorage.setItem('nombre', usuarioEncontrado.nombre);
+    sessionStorage.setItem('imagenes',String(usuarioEncontrado.imagenes))
     console.log("Usuario encontrado");
     window.location.href = "home.html";
   } else {
